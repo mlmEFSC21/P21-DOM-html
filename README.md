@@ -1,5 +1,6 @@
 # P21-DOM-html
 Module 12 Project 1 (DOM html)
+
 Preface
 In this project you will traverse and modify a DOM Tree.  You will be able to highlight, modify, insert and remove elements on a web page. Note that the CSS class highlighted is applied dynamically to elements in the document as you add, remove and select elements using the form.
 
