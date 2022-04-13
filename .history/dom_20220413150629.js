@@ -15,15 +15,4 @@ function start() {
 
     //initialize currentNode
     currentNode = document.getElementById("bigheading");
-} // end function start
-
-//call start after the window laods
-window.addEventListener("load", start, false);
-
-//get and highlight an element by its id attribute
-function byId() {
-    var id = document.getElementById("gbi").value;
-    var target = document.getElementById(id);
-
-    if (target) switchTo(target);
-} //end function byId
+}
