@@ -70,23 +70,3 @@ function parent() {
         alert("No parent.");
     }
 } //end function parent
-
-// helper function that returns a new paragraph node containing
-// a unique id and the given text
-function createNewNode(text) {
-    var newNode = document.createElement("p");
-    nodeId = "new" + idcount;
-    ++idcount;
-    newNode.setAttribute("id", nodeId); //set newNode's id
-    text = "[" + nodeId + "]" + text;
-    newNode.appendChild(document.createTextNode(text));
-    return newNode;
-} // end function createNewNode
-
-//helper function that switches to a new currentNode
-function switchTo(newNode) {
-    currentNode.setAttribute("class", ""); //remove old highlighting
-    currentNode = newNode;
-    currentNode.setAttribute("class", "highlighted"); //highlight
-    document.getElementById("gbi").value = currentNode.getAttribute("id");
-} //end function switchTo

@@ -79,14 +79,4 @@ function createNewNode(text) {
     ++idcount;
     newNode.setAttribute("id", nodeId); //set newNode's id
     text = "[" + nodeId + "]" + text;
-    newNode.appendChild(document.createTextNode(text));
-    return newNode;
-} // end function createNewNode
-
-//helper function that switches to a new currentNode
-function switchTo(newNode) {
-    currentNode.setAttribute("class", ""); //remove old highlighting
-    currentNode = newNode;
-    currentNode.setAttribute("class", "highlighted"); //highlight
-    document.getElementById("gbi").value = currentNode.getAttribute("id");
-} //end function switchTo
+}
