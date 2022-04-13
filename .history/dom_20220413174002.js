@@ -42,10 +42,3 @@ function appendNode() {
     currentNode.appendChild(newNode);
     switchTo(newNode);
 } // end function appendNode
-
-// replace the currently selected node with a paragraph node
-function repalceCurrent() {
-    var newNode = createNewNode(document.getElementById("replace").value);
-    currentNode.parentNode.replaceChild(newNode, currentNode);
-    switchTo(newNode);
-} //end function replace current
